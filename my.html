@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="./ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="./ckeditor/init.js"></script>
+	<style type="text/css">
+		
+		p{
+			border: 1px solid #ff00ff;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="editor" style="width: 100%;height:500px;">
+
+	</div>
+	<script>
+		window.onload=function(){
+
+		    // CKEDITOR.plugins.addExternal('copyright', '/ckeditor/plugins/copyright/', 'plugin.js');
+		    CKEDITOR.plugins.addExternal('simplebox', '/ckeditor/plugins/simplebox/', 'plugin.js');
+
+		    // CKEDITOR.replace('editor', {
+
+		    //   extraPlugins: 'copyright'
+    		// });
+
+    		CKEDITOR.replace('editor', {
+
+		      extraPlugins: 'simplebox'
+    		});
+    	}
+
+  </script>
+</body>
